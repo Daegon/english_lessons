@@ -1,0 +1,10 @@
+<section class="content-header">
+    <h1>{{header}}</h1>
+    <ol class="breadcrumb">
+        {{#each crumb in breadcrumbs}}
+            <li>
+                {{#link-to crumb.path}}{{crumb.name}}{{/link-to}}
+            </li>
+        {{/each}}
+    </ol>
+</section>

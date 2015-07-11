@@ -1,0 +1,15 @@
+<aside class="main-sidebar">
+    <section class="sidebar">
+        <ul class="sidebar-menu">
+            <li class="header">{{i18n labels.main_menu}}</li>
+            <li class="active">
+                {{#link-to 'index'}} <i class='fa fa-link'></i> <span>{{i18n labels.home_page}}</span> {{/link-to}}</li>
+            <li class="treeview">
+                <a href="#"><i class='fa fa-link'></i> <span>{{i18n labels.content}}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li>{{#link-to 'resources' (query-params resource="pages")}} {{i18n resources.index}} {{/link-to}}</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</aside>
