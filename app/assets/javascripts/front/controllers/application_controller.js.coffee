@@ -1,0 +1,1 @@
+EnglishLessons.ApplicationController = Ember.Controller.extend()
