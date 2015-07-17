@@ -1,10 +1,5 @@
 <!-- Main content -->
 <section class="content">
     {{#link-to 'pages.new'}} {{i18n "pages.new"}} {{/link-to}}
-
-    <ul>
-        {{#each}}
-            {{#link-to 'pages.edit' this}} {{name_ua}} {{/link-to}}
-        {{/each}}
-    </ul>
+    {{ view Ela.DataTablesView templateName='pages/datatables' tableId='ProductsDatatable'}}
 </section><!-- /.content -->

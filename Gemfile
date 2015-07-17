@@ -63,3 +63,8 @@ group :test do
   gem 'capybara'
   gem 'guard-rspec'
 end
+
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+gem 'jquery-ui-rails'
+
+gem 'will_paginate'

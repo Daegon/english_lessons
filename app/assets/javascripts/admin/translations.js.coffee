@@ -5,6 +5,20 @@ I18n.translations = {
       one: 'You have {{count}} cookie.',
       other: 'You have {{count}} cookies. Yum!'
     }
+    pages: {
+      new: 'Create new page'
+      index: 'Pages'
+    },
+    labels: {
+      admin_panel: 'Admin panel'
+      home_page: 'Home page'
+      content: 'Content'
+      site_name: 'English Lessons'
+      short_site_name: 'EL'
+      main_menu: 'Menu'
+      id: 'ID'
+      name: 'Name'
+    }
   },
 
   ua: {
@@ -20,6 +34,8 @@ I18n.translations = {
       site_name: 'English Lessons'
       short_site_name: 'EL'
       main_menu: 'Меню'
+      id: 'ID'
+      name: 'Имя'
     }
   }
 };

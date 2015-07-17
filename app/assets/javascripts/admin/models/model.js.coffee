@@ -7,7 +7,12 @@
 #  data['short_content_' + item] = DS.attr 'string'
 #  data['content_' + item] = DS.attr 'string'
 
-Ela.Page = Ela.Model.extend {
-  position: DS.attr 'number'
-  translations: DS.attr()
+Ela.Model = DS.Model.extend {
+  init: ->
+    translations = @get('translations')
+    if translations?
+      translations = translations[I18n.locale]
+      if translations?
+        $.each translations, (key, val)=>
+          @set(key, val)
 }

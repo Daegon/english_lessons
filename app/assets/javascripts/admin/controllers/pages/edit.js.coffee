@@ -1,8 +1,8 @@
 Ela.PagesEditController = Ember.ObjectController.extend
   breadcrumb: ->
-    @get 'model.name_ua'
+    @get 'model.name'
   header: ->
-    @get 'model.name_ua'
+    @get 'model.name'
   actions:
     save: ->
       @get('model').save()
