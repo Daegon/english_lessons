@@ -5,9 +5,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
+      get 'pages/datatables' => 'pages#datatables'
       resources :pages
-
-      get 'resources/get_meta' => 'resources#get_meta'
     end
   end
 

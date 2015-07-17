@@ -1,6 +1,7 @@
 #= require handlebars
 #= require jquery2
 #= require jquery_ujs
+#= require dataTables/jquery.dataTables
 #= require ember
 #= require ember-data
 #= require i18n
@@ -19,12 +20,7 @@ window.Ela = Ember.Application.create
 Ela.initializer
   name: "locale",
   initialize: (container, application) ->
-    I18n.locale = 'ua'
-    Ela.deferReadiness()
-    $.getJSON '/api/v1/resources/get_meta', (config)->
-      Ember.set('Ela.metaData', config)
-      Ember.set('Ela.currentResource', null)
-      Ela.advanceReadiness()
+    I18n.locale = 'en'
 
 
 Ember.Handlebars.registerHelper 'i18n', (property, options) ->

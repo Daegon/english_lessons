@@ -20,8 +20,6 @@ class ApplicationController < ActionController::Base
       @object = model.find(params[:id])
       self.instance_variable_set('@' + controller_name.singularize, @object) if @object
     end
-  rescue ActiveRecord::RecordNotFound
-    render_404
   end
 
   def self.model_object(model)

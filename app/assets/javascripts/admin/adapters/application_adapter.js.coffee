@@ -3,7 +3,9 @@
 Ela.ApplicationAdapter = DS.ActiveModelAdapter.extend
   namespace: 'api/v1',
   headers: ( ->
-    {
-    "locale": ""
-    }
-  ).property().volatile()
+      {
+      "locale": ""
+      }
+    ).property().volatile(),
+  buildDatatablesURL: (modelName) ->
+      @buildURL(modelName) + '/datatables'
