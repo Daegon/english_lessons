@@ -18,6 +18,8 @@ I18n.translations = {
       main_menu: 'Menu'
       id: 'ID'
       name: 'Name'
+      actions: 'Actions'
+      delete: 'Delete'
     }
   },
 
@@ -35,7 +37,9 @@ I18n.translations = {
       short_site_name: 'EL'
       main_menu: 'Меню'
       id: 'ID'
-      name: 'Имя'
+      name: 'Імя'
+      actions: 'Дії'
+      delete: 'Видалити'
     }
   }
 };

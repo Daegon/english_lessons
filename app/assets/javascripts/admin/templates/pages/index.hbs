@@ -1,5 +1,15 @@
 <!-- Main content -->
 <section class="content">
     {{#link-to 'pages.new'}} {{i18n "pages.new"}} {{/link-to}}
-    {{ view Ela.DataTablesView templateName='pages/datatables' tableId='ProductsDatatable'}}
+    <table id="ProductsDatatable" class="display" {{bind-attr data-source=datatablesUrl}}>
+        <thead>
+        <tr>
+            <th>{{i18n "labels.id"}}</th>
+            <th>{{i18n "labels.name"}}</th>
+            <th>{{i18n "labels.actions"}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 </section><!-- /.content -->
