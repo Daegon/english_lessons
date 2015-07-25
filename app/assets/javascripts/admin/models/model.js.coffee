@@ -8,8 +8,9 @@
 #  data['content_' + item] = DS.attr 'string'
 
 Ela.Model = DS.Model.extend {
-  init: ->
+  didLoad: ->
     translations = @get('translations')
+    console.log translations
     if translations?
       translations = translations[I18n.locale]
       if translations?

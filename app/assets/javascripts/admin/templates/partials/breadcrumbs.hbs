@@ -3,7 +3,7 @@
     <ol class="breadcrumb">
         {{#each crumb in breadcrumbs}}
             <li>
-                {{#link-to crumb.path}}{{crumb.name}}{{/link-to}}
+                <a {{bind-attr href=crumb.path}}>{{crumb.name}}</a>
             </li>
         {{/each}}
     </ol>
